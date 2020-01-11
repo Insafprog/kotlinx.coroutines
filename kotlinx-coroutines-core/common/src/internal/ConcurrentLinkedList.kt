@@ -6,7 +6,7 @@ package kotlinx.coroutines.internal
 
 import kotlinx.atomicfu.*
 import kotlinx.coroutines.*
-import kotlin.native.concurrent.*
+import kotlin.native.concurrent.SharedImmutable
 
 // Returns the first segment `s` with `s.id >= id` or `CLOSED`
 // if all the segments in this linked list have lower `id` and the list is closed for further segment additions.
